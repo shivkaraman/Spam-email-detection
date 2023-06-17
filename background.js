@@ -45,3 +45,9 @@ chrome.runtime.onMessage.addListener(async function (request, sender, sendRespon
     }
   }
 });
+
+// Function to be executed in the content script
+function displayPrediction(prediction) {
+  // Display the prediction in the extension popup
+ alert(prediction)
+}
